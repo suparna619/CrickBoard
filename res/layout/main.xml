@@ -17,9 +17,15 @@
             android:inputType="text"
             android:imeOptions="actionSend" />
     <Button
+            android:id = "@+id/Submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
             />
+    <TextView android:id="@+id/formattedtext"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text=""/>
+
 </LinearLayout>
 
