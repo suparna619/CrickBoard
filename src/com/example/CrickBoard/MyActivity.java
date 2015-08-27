@@ -38,6 +38,7 @@ public class MyActivity extends Activity {
         final String[] text = {""};
         Button addButton = (Button) findViewById(R.id.Add);
         Button reduceButton = (Button) findViewById(R.id.Reduce);
+        Button doneButton = (Button) findViewById(R.id.Done);
 
         addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -58,8 +59,16 @@ public class MyActivity extends Activity {
                 editText.setText("");
             }
         });
-
         System.out.print(text[0]);
-    }
 
-}
+//        doneButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//
+//                number = 0;
+//
+//            }
+//        });
+
+        }
+
+    }

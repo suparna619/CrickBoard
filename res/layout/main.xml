@@ -37,8 +37,14 @@
     <TextView android:id="@+id/formattedtext"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
-              android:text=""/>
-
+              android:text=""
+            />
+    <Button
+            android:id = "@+id/Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            />
 
 </LinearLayout>
 
