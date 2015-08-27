@@ -15,6 +15,8 @@ public class MyActivity extends Activity {
     /**
      * Called when the activity is first created.
      */
+
+    private static int number = 0;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,18 +33,19 @@ public class MyActivity extends Activity {
             }
         });
         final String[] text = {""};
-        Button button = (Button) findViewById(R.id.Submit);
+        Button button = (Button) findViewById(R.id.Add);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
                 TextView foo = (TextView)findViewById(R.id.formattedtext);
                 String text = editText.getText().toString();
-                foo.setText(text);
+                number += Integer.parseInt(text);
+                foo.setText(number+"");
+                editText.setText("");
 //                 text[0] = String.valueOf(editText.getText());
             }
-
-
         });
+
         System.out.print(text[0]);
     }
 

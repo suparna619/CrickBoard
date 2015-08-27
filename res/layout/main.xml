@@ -7,7 +7,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello I am suparna, MyActivity"
+            android:text="Team - 1"
             />
     <EditText
             android:id="@+id/search"
@@ -17,10 +17,17 @@
             android:inputType="text"
             android:imeOptions="actionSend" />
     <Button
-            android:id = "@+id/Submit"
+            android:id = "@+id/Add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="Add"
+            />
+
+    <Button
+            android:id = "@+id/Reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reduce"
             />
     <TextView android:id="@+id/formattedtext"
               android:layout_width="fill_parent"
