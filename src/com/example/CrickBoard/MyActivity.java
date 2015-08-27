@@ -33,7 +33,8 @@ public class MyActivity extends Activity {
                 return handled;
             }
         });
-        
+        TextView foo = (TextView) findViewById(R.id.formattedtext);
+        foo.setText(""+number);
         TextView teamName = (TextView)findViewById(R.id.TeamName);
             teamName.setText("Team - 1");
         final String[] text = {""};
