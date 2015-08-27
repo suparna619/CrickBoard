@@ -66,6 +66,7 @@ public class MyActivity extends Activity {
             public void onClick(View v) {
                 TextView foo = (TextView) findViewById(R.id.formattedtext);
                 Integer targetValue = number;
+                teamName.setText("Team - 2");
                 TextView target = (TextView) findViewById(R.id.Target);
                 target.setText("Target : "+targetValue);
                 number = 0;
