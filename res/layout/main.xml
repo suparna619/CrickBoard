@@ -16,7 +16,8 @@
             android:layout_height="wrap_content"
             android:hint=""
             android:inputType="text"
-            android:imeOptions="actionSend" />
+            android:imeOptions="actionSend"
+            />
     <Button
             android:id = "@+id/Add"
             android:layout_width="wrap_content"
@@ -45,6 +46,10 @@
             android:layout_height="wrap_content"
             android:text="Done"
             />
-
+    <TextView android:id="@+id/Target"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text=""
+            />
 </LinearLayout>
 

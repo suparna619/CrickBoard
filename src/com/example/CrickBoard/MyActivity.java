@@ -65,7 +65,9 @@ public class MyActivity extends Activity {
         doneButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 TextView foo = (TextView) findViewById(R.id.formattedtext);
-                Integer target = number;
+                Integer targetValue = number;
+                TextView target = (TextView) findViewById(R.id.Target);
+                target.setText("Target : "+targetValue);
                 number = 0;
                 foo.setText(number + "");
                 editText.setText("");
