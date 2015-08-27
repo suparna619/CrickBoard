@@ -2,14 +2,11 @@ package com.example.CrickBoard;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.style.TtsSpan;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MyActivity extends Activity {
@@ -17,7 +14,8 @@ public class MyActivity extends Activity {
      * Called when the activity is first created.
      */
 
-    private static int number = 0;
+    private static int score;
+    private static int targetScore;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +31,8 @@ public class MyActivity extends Activity {
                 return handled;
             }
         });
-        TextView foo = (TextView) findViewById(R.id.formattedtext);
-        foo.setText(""+number);
+        TextView userTextInput = (TextView) findViewById(R.id.Formattedtext);
+        userTextInput.setText("" + score);
         TextView teamName = (TextView)findViewById(R.id.TeamName);
             teamName.setText("Team - 1");
         final String[] text = {""};
@@ -44,34 +42,42 @@ public class MyActivity extends Activity {
 
         addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView foo = (TextView) findViewById(R.id.formattedtext);
+                TextView foo = (TextView) findViewById(R.id.Formattedtext);
                 String text = editText.getText().toString();
-                number += Integer.parseInt(text);
-                foo.setText(number + "");
+                score += Integer.parseInt(text);
+                foo.setText(score + "");
+
                 editText.setText("");
+                if (score > targetScore && targetScore != 0){
+                    editText.setText("Congratulation Team-2, You Won");
+                }
             }
         });
 
         reduceButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView foo = (TextView) findViewById(R.id.formattedtext);
+                TextView foo = (TextView) findViewById(R.id.Formattedtext);
                 String text = editText.getText().toString();
-                number -= Integer.parseInt(text);
-                foo.setText(number + "");
+                score -= Integer.parseInt(text);
+                foo.setText(score + "");
                 editText.setText("");
             }
         });
 
         doneButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView foo = (TextView) findViewById(R.id.formattedtext);
-                Integer targetValue = number;
+                TextView foo = (TextView) findViewById(R.id.Formattedtext);
                 teamName.setText("Team - 2");
                 TextView target = (TextView) findViewById(R.id.Target);
-                target.setText("Target : "+targetValue);
-                number = 0;
-                foo.setText(number + "");
                 editText.setText("");
+                if (score < targetScore && targetScore != 0){
+                    editText.setText("Congratulation Team-1, You Won");
+                }
+                targetScore = score;
+                score = 0;
+                foo.setText(score + "");
+                target.setText("Target : "+targetScore);
+
             }
         });
 

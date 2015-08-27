@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:text="Score"
             />
-    <TextView android:id="@+id/formattedtext"
+    <TextView android:id="@+id/Formattedtext"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:text=""
