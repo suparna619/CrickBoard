@@ -3,6 +3,7 @@ package com.example.CrickBoard;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.style.TtsSpan;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -32,6 +33,8 @@ public class MyActivity extends Activity {
                 return handled;
             }
         });
+        TextView teamName = (TextView)findViewById(R.id.TeamName);
+            teamName.setText("Team - 1");
         final String[] text = {""};
         Button addButton = (Button) findViewById(R.id.Add);
         Button reduceButton = (Button) findViewById(R.id.Reduce);
