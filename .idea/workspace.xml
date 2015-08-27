@@ -24,6 +24,9 @@
       </layout>
     </layouts>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.example.CrickBoard" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc0f990-ebe4-462e-9061-6fc6b47b467c" name="Default" comment="" />
     <ignored path="CrickBoard.iws" />
@@ -69,8 +72,8 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/CrickBoard/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3497364">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.6572935">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding>
                 <element signature="docComment;field#number#0;class#MyActivity#0" expanded="false" />
               </folding>
@@ -636,7 +639,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/example/CrickBoard/MyActivity.java</url>
-          <line>48</line>
+          <line>58</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -1071,8 +1074,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/CrickBoard/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3497364">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.6572935">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="docComment;field#number#0;class#MyActivity#0" expanded="false" />
           </folding>

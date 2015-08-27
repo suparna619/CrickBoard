@@ -33,16 +33,26 @@ public class MyActivity extends Activity {
             }
         });
         final String[] text = {""};
-        Button button = (Button) findViewById(R.id.Add);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button addButton = (Button) findViewById(R.id.Add);
+        Button reduceButton = (Button) findViewById(R.id.Reduce);
+
+        addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Do something in response to button click
-                TextView foo = (TextView)findViewById(R.id.formattedtext);
+                TextView foo = (TextView) findViewById(R.id.formattedtext);
                 String text = editText.getText().toString();
                 number += Integer.parseInt(text);
-                foo.setText(number+"");
+                foo.setText(number + "");
                 editText.setText("");
-//                 text[0] = String.valueOf(editText.getText());
+            }
+        });
+
+        reduceButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                TextView foo = (TextView) findViewById(R.id.formattedtext);
+                String text = editText.getText().toString();
+                number -= Integer.parseInt(text);
+                foo.setText(number + "");
+                editText.setText("");
             }
         });
 
