@@ -33,6 +33,7 @@ public class MyActivity extends Activity {
                 return handled;
             }
         });
+        
         TextView teamName = (TextView)findViewById(R.id.TeamName);
             teamName.setText("Team - 1");
         final String[] text = {""};
@@ -62,8 +63,11 @@ public class MyActivity extends Activity {
 
         doneButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                TextView foo = (TextView) findViewById(R.id.formattedtext);
                 Integer target = number;
                 number = 0;
+                foo.setText(number + "");
+                editText.setText("");
             }
         });
 
