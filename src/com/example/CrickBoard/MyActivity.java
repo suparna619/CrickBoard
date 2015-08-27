@@ -59,15 +59,13 @@ public class MyActivity extends Activity {
                 editText.setText("");
             }
         });
-        System.out.print(text[0]);
 
-//        doneButton.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//
-//                number = 0;
-//
-//            }
-//        });
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Integer target = number;
+                number = 0;
+            }
+        });
 
         }
 
