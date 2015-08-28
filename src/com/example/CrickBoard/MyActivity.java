@@ -47,10 +47,12 @@ public class MyActivity extends Activity {
             public void onClick(View v) {
                 TextView userTextInput = (TextView) findViewById(R.id.Formattedtext);
                 String text = editText.getText().toString();
-                score += Integer.parseInt(text);
-                userTextInput.setText(score + "");
-                userTextInput.setTextSize(70);
-                userTextInput.setGravity(Gravity.CENTER);
+                if(!text.equals("")){
+                    score += Integer.parseInt(text);
+                    userTextInput.setText(score + "");
+                    userTextInput.setTextSize(70);
+                    userTextInput.setGravity(Gravity.CENTER);
+                }
 
                 editText.setText("");
                 if (score > targetScore && targetScore != 0){
@@ -63,10 +65,12 @@ public class MyActivity extends Activity {
             public void onClick(View v) {
                 TextView userTextInput = (TextView) findViewById(R.id.Formattedtext);
                 String text = editText.getText().toString();
-                score -= Integer.parseInt(text);
-                userTextInput.setText(score + "");
-                userTextInput.setTextSize(70);
-                userTextInput.setGravity(Gravity.CENTER);
+                if(!text.equals("")){
+                    score -= Integer.parseInt(text);
+                    userTextInput.setText(score + "");
+                    userTextInput.setTextSize(70);
+                    userTextInput.setGravity(Gravity.CENTER);
+                }
                 editText.setText("");
             }
         });
