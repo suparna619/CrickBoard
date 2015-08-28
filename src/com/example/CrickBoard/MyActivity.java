@@ -56,7 +56,9 @@ public class MyActivity extends Activity {
 
                 editText.setText("");
                 if (score > targetScore && targetScore != 0){
-                    editText.setText("Congratulation Team-2, You Won");
+                    setContentView(R.layout.result);
+                    TextView resultMessage = (TextView) findViewById(R.id.Result);
+                    resultMessage.setText("Congratulation Team-2, You Won");
                 }
             }
         });
