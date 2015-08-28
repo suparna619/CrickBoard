@@ -18,18 +18,24 @@
             android:inputType="text"
             android:imeOptions="actionSend"
             />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
     <Button
             android:id = "@+id/Add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
             android:text="Add"
             />
     <Button
             android:id = "@+id/Reduce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
             android:text="Reduce"
             />
+    </LinearLayout>
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
