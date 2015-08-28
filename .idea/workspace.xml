@@ -52,8 +52,8 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/CrickBoard/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43082312">
-              <caret line="86" column="71" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.3870403">
+              <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#score#0;class#MyActivity#0" expanded="false" />
@@ -1012,8 +1012,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/CrickBoard/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43082312">
-          <caret line="86" column="71" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.3870403">
+          <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#score#0;class#MyActivity#0" expanded="false" />

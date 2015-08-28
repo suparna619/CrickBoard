@@ -84,7 +84,9 @@ public class MyActivity extends Activity {
                 TextView target = (TextView) findViewById(R.id.Target);
                 editText.setText("");
                 if (score < targetScore && targetScore != 0){
-                    editText.setText("Congratulation Team-1, You Won");
+                    setContentView(R.layout.result);
+                    TextView resultMessage = (TextView) findViewById(R.id.Result);
+                    resultMessage.setText("Congratulation Team-1, You Won");
                 }
                 targetScore = score;
                 score = 0;
