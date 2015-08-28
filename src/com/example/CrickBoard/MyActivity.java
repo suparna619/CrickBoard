@@ -1,6 +1,7 @@
 package com.example.CrickBoard;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -42,6 +43,7 @@ public class MyActivity extends Activity {
         Button addButton = (Button) findViewById(R.id.Add);
         Button reduceButton = (Button) findViewById(R.id.Reduce);
         Button doneButton = (Button) findViewById(R.id.Done);
+        Button startNewGameButton = (Button) findViewById(R.id.StartNewGame);
 
         addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
