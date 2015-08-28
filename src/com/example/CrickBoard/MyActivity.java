@@ -2,6 +2,7 @@ package com.example.CrickBoard;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -33,6 +34,8 @@ public class MyActivity extends Activity {
         });
         TextView userTextInput = (TextView) findViewById(R.id.Formattedtext);
         userTextInput.setText("" + score);
+        userTextInput.setTextSize(70);
+        userTextInput.setGravity(Gravity.CENTER);
         TextView teamName = (TextView)findViewById(R.id.TeamName);
             teamName.setText("Team - 1");
         final String[] text = {""};
@@ -42,10 +45,12 @@ public class MyActivity extends Activity {
 
         addButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView foo = (TextView) findViewById(R.id.Formattedtext);
+                TextView userTextInput = (TextView) findViewById(R.id.Formattedtext);
                 String text = editText.getText().toString();
                 score += Integer.parseInt(text);
-                foo.setText(score + "");
+                userTextInput.setText(score + "");
+                userTextInput.setTextSize(70);
+                userTextInput.setGravity(Gravity.CENTER);
 
                 editText.setText("");
                 if (score > targetScore && targetScore != 0){
@@ -56,17 +61,19 @@ public class MyActivity extends Activity {
 
         reduceButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView foo = (TextView) findViewById(R.id.Formattedtext);
+                TextView userTextInput = (TextView) findViewById(R.id.Formattedtext);
                 String text = editText.getText().toString();
                 score -= Integer.parseInt(text);
-                foo.setText(score + "");
+                userTextInput.setText(score + "");
+                userTextInput.setTextSize(70);
+                userTextInput.setGravity(Gravity.CENTER);
                 editText.setText("");
             }
         });
 
         doneButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                TextView foo = (TextView) findViewById(R.id.Formattedtext);
+                TextView userTextInput = (TextView) findViewById(R.id.Formattedtext);
                 teamName.setText("Team - 2");
                 TextView target = (TextView) findViewById(R.id.Target);
                 editText.setText("");
@@ -75,12 +82,11 @@ public class MyActivity extends Activity {
                 }
                 targetScore = score;
                 score = 0;
-                foo.setText(score + "");
+                userTextInput.setText(score + "");
+                userTextInput.setTextSize(70);
+                userTextInput.setGravity(Gravity.CENTER);
                 target.setText("Target : "+targetScore);
-
             }
         });
-
-        }
-
     }
+}
